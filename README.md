@@ -1,7 +1,8 @@
 # common-gsea-pathway-comparison
 Compare common up/downregulated pathways across datasets using GSEA
-**Requirements
-**
+
+Requirements
+
 R ≥ 4.1 recommended
 
 install.packages(c(
