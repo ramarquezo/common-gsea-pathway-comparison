@@ -1,7 +1,7 @@
 # common-gsea-pathway-comparison
 Compare common up/downregulated pathways across datasets using GSEA
 
-Requirements
+##Requirements
 
 R ≥ 4.1 recommended
 
@@ -14,22 +14,22 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 
 BiocManager::install(c("clusterProfiler", "msigdbr"))
 
-Input format
+##Input format
 
 Each dataset must be an Excel file (.xlsx) with at least:
 
-Column name	Description
+###Column name	Description
 symbol	Gene symbol (e.g., TP53, Fgf2)
 log2FoldChange	Effect size (used for ranking)
 padj	Adjusted p-value (optional filters)
 
-Example:
+###Example:
 
 symbol   log2FoldChange   padj
 Fgf2     -1.25            0.001
 Cxcl10    2.10            0.0003
 
-Usage
+##Usage
 source("common_gsea.R")
 
 run_common_gsea(
@@ -59,7 +59,7 @@ p_drivers_*.png and .pdf
 
 run_*_objects.rds
 
-Key parameters
+##Key parameters
 Parameter	Description
 label1, label2	Names for datasets in plots
 species	"Mus musculus" or "Homo sapiens"
@@ -69,7 +69,8 @@ plot_set	"drivers" (sig in both) or "common"
 gsea_padj_cutoff	FDR threshold for common drivers
 padj_cutoff	Gene-level filter for sig tables
 lfc_cutoff	Gene-level effect size filter
-Output interpretation
+
+##Output interpretation
 
 NES (Normalized Enrichment Score)
 Positive NES = pathway enriched in upregulated genes
@@ -86,7 +87,7 @@ Each pathway appears twice (one point per dataset)
 X-axis = NES, Y-axis = pathway
 Shape = dataset, Color = direction
 
-Typical use cases
+##Typical use cases
 
 RNA-seq vs Ribo-seq pathway concordance
 
@@ -98,7 +99,7 @@ Cross-species pathway agreement
 
 Validation of perturbation signatures
 
-Reproducibility
+##Reproducibility
 
 Each run saves:
 
@@ -111,7 +112,7 @@ results tables
 plotting data
 into a single .rds file for downstream reuse.
 
-Citation
+##Citation
 
 If you use this script in a publication or preprint, please cite:
 
