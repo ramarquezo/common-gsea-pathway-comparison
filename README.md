@@ -116,6 +116,22 @@ into a single .rds file for downstream reuse.
 
 If you use this script in a publication or preprint, please cite:
 
-**Márquez-Ortiz RA**. Common GSEA Pathway Comparison Utility. GitHub repository, 2026.
+**This repository:**
+> **Márquez-Ortiz RA**. *Common GSEA Pathway Comparison Utility*. GitHub repository, 2026.
 
-(Optional: add DOI via Zenodo later.)
+**Gene Set Enrichment Analysis (GSEA):**
+> Subramanian A, Tamayo P, Mootha VK, et al.  
+> *Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles.*  
+> Proc Natl Acad Sci U S A (2005). doi: 10.1073/pnas.0506580102 :contentReference[oaicite:0]{index=0}
+
+**Enrichment implementation in R (clusterProfiler):**
+> Wu T, Hu E, Xu S, et al.  
+> *clusterProfiler 4.0: A universal enrichment tool for interpreting omics data.*  
+> The Innovation (2021). doi: 10.1016/j.xinn.2021.100141 :contentReference[oaicite:1]{index=1}
+
+**Gene sets (MSigDB Hallmark collection):**
+> Liberzon A, Birger C, Thorvaldsdóttir H, Ghandi M, Mesirov JP, Tamayo P.  
+> *The Molecular Signatures Database (MSigDB) hallmark gene set collection.*  
+> Cell Systems (2015). doi: 10.1016/j.cels.2015.12.004 :contentReference[oaicite:2]{index=2}
+
+*MSigDB access in R used here: `{msigdbr}` (CRAN package; provides MSigDB gene sets in tidy format).* :contentReference[oaicite:3]{index=3}
