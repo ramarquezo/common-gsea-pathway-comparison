@@ -116,6 +116,6 @@ into a single .rds file for downstream reuse.
 
 If you use this script in a publication or preprint, please cite:
 
-Márquez-Ortiz RA. Common GSEA Pathway Comparison Utility. GitHub repository, 2026.
+**Márquez-Ortiz RA**. Common GSEA Pathway Comparison Utility. GitHub repository, 2026.
 
 (Optional: add DOI via Zenodo later.)
